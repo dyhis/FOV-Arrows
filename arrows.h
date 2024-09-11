@@ -1,9 +1,9 @@
 if (distance <= 100.00f && settings::visuals::Indicators) {
-				float circleRadius = settings::combat::fov * 10;
+				float circleRadius = combat::fov * 10;
 				float fCompassSize = circleRadius + 10;
 
-				float cCenterX = settings::m_width / 2.0f;
-				float cCenterY = settings::m_height / 2.0f;
+				float cCenterX = ue5::width / 2.0f;
+				float cCenterY = ue5::height / 2.0f;
 
 				float dx = m_camera_information.Location.X - head_bone_pos.X;
 				float dy = m_camera_information.Location.Y - head_bone_pos.Y;
