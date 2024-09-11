@@ -1,4 +1,4 @@
-if (distance <= 100.00f && settings::visuals::Indicators) {
+if (distance <= 100.00f && visuals::Indicators) {
 				float circleRadius = combat::fov * 10;
 				float fCompassSize = circleRadius + 10;
 
