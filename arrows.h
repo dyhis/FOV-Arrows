@@ -1,4 +1,3 @@
-
 if (distance <= 100.00f && settings::visuals::Indicators) {
 				float circleRadius = settings::combat::fov * 10;
 				float fCompassSize = circleRadius + 10;
@@ -30,9 +29,7 @@ if (distance <= 100.00f && settings::visuals::Indicators) {
 				float CircleOut2X = cCenterX + (cosf(radians2) * (fCompassSize - (fCompassSize / 7.5f) * widthFactor));
 				float CircleOut2Y = cCenterY + (sinf(radians2) * (fCompassSize - (fCompassSize / 7.5f) * widthFactor));
 
-				ImVec2 vertices[3] = { ImVec2(CircleOutX, CircleOutY),
-									   ImVec2(CircleOut1X, CircleOut1Y),
-									   ImVec2(CircleOut2X, CircleOut2Y) };
+				ImVec2 vertices[3] = { ImVec2(CircleOutX, CircleOutY), ImVec2(CircleOut1X, CircleOut1Y), ImVec2(CircleOut2X, CircleOut2Y) };
 
 				ImGui::GetForegroundDrawList()->AddTriangleFilled(vertices[0], vertices[1], vertices[2], c_color);
 }
